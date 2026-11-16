@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail Transaksi"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"/> <!-- Pusatkan judul -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Meter Bulan Kemarin -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Bulan Kemarin"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvMeterKemarin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Meter Bulan Sekarang -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Bulan Sekarang"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvMeterSekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Pemakaian Air -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemakaian Air"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvPemakaianAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Rekening Air -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekening Air"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvRekeningAirDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Denda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Denda"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvDenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Maintenance -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintenance"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvMaintenanceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Res.Kebersihan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Res.Kebersihan"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvResKebersihanDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Tanggal Bayar -->
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Bayar"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvTanggalBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Tagihan"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tvTotalTagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="20dp"/>
+
+    </GridLayout>
+
+    <!-- Total Tagihan (tetap di luar GridLayout untuk mempertahankan posisi) -->
+
+
+
+
+
+
+</LinearLayout>

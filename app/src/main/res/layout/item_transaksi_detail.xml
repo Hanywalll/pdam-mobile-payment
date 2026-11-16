@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tambahkan Meter Bulan Kemarin -->
+    <TextView
+        android:id="@+id/tvMeterKemarin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meter Bulan Kemarin: "
+        android:textSize="16sp"
+        android:textColor="@color/basic_dark"/>
+
+    <!-- Tambahkan Meter Bulan Sekarang -->
+    <TextView
+        android:id="@+id/tvMeterSekarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meter Bulan Sekarang: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvPemakaianAir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemakaian Air: "
+        android:textSize="16sp"/>
+
+    <!-- Tambahkan TextView untuk Maintenance -->
+    <TextView
+        android:id="@+id/tvMaintenance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maintenance: "
+        android:textSize="16sp"/>
+
+    <!-- Tambahkan TextView untuk Res.Kebersihan -->
+    <TextView
+        android:id="@+id/tvResKebersihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Res.Kebersihan: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvTanggalBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Bayar: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvDenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Denda: "
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvTotalTagihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Tagihanb: "
+        android:textSize="16sp"/>
+</LinearLayout>

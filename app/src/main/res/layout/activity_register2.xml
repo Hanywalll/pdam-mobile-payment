@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    >
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silakan Lengkapi Data Diri Anda"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:background="@drawable/rounded_white_bg"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Akun"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#858484"
+            android:textSize="16sp"
+            android:importantForAutofill="no"
+            android:autofillHints="username"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/input_background"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="#858484"
+            android:layout_marginBottom="16dp"
+            android:importantForAutofill="no"
+            android:autofillHints="username"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Konfirmasi Password"
+            android:inputType="textPassword"
+            android:background="@drawable/input_background"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="#858484"
+            android:layout_marginBottom="16dp"
+            android:importantForAutofill="no"
+            android:autofillHints="username"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jabatan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+        <Spinner
+            android:id="@+id/spRole"
+            style="@style/CustomSpinner"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="match_parent"
+            android:dropDownHorizontalOffset="100dp"
+            android:dropDownVerticalOffset="10dp"
+            android:entries="@array/roles"
+            android:layout_marginBottom="16dp"
+            android:spinnerMode="dropdown"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:backgroundTint="@color/basic"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingVertical="14dp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun? Yuk Login"
+            android:textColor="@color/basic"
+            android:layout_gravity="center"
+            android:paddingTop="24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

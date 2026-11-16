@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/ivSuccessIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_checklist"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi Berhasil"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50" />
+    </LinearLayout>
+
+    <!-- Informasi Pelanggan (Tidak Disejajarkan) -->
+    <TextView
+        android:id="@+id/tvCustomerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#424242"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginVertical="12dp"/>
+
+    <!-- Bagian Detail Transaksi (Menggunakan GridLayout untuk Penjajaran) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
+
+        <!-- Periode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periode:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvPeriodeReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Meter Bulan Kemarin -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Bulan Kemarin:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvMeterKemarinReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Meter Bulan Sekarang -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Bulan Sekarang:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvMeterSekarangReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Pemakaian Air -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemakaian Air (m³):"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvPemakaianAirReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Maintenance -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintenance:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvMaintenanceReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Res.Kebersihan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Res.Kebersihan:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvResKebersihanReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Rekening Air -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekening Air:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvRekeningAirReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Denda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Denda:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvDendaReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Tanggal Bayar (Dipindahkan ke sini) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Bayar:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="12dp"
+            /> <!-- Memberikan spasi dari Denda -->
+        <TextView
+            android:id="@+id/tvTanggalBayarReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar:"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvPaymentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp" />
+
+    </GridLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="start|center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:textStyle="bold"
+                android:textColor="@color/selector_basic_dark_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagikan"
+                android:textStyle="bold"
+                android:textColor="@color/selector_basic_dark_text"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvOke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textColor="@color/selector_basic_dark_text"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

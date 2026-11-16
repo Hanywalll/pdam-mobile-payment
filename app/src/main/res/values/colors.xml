@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna utama -->
+    <color name="colorPrimary">#FF6200EE</color> <!-- Ungu Material Design -->
+    <color name="colorPrimaryDark">#FF3700B3</color> <!-- Versi gelap dari colorPrimary -->
+    <color name="colorAccent">#FF03DAC5</color> <!-- Warna aksen -->
+    <color name="header_color">#637EFF</color>
+    <!-- Warna lainnya -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="basic">#637EFF</color>
+    <color name="basic_dark">#29366F</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="gray_hint">#FF018786</color>
+    <color name="blue_highlight">#FF018786</color>
+        <color name="teal_500">#009688</color>
+
+        <color name="teal_800">#00695C</color>
+
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryDark">#018786</color>
+    <color name="blue_500">#2196F3</color> <!-- Biru standar Material Design -->
+    <color name="dark">#1E1E1E</color>
+    <color name="gray">#858484</color>
+    <color name="silver">#4B4A4A</color>
+    <!-- Warna dasar -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#973B3B</color>
+    <color name="status_paid">#479028</color>
+    <color name="status_unpaid">#973B3B</color>
+    <color name="green">#479028</color>
+
+</resources>

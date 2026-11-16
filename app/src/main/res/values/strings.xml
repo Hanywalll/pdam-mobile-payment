@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tagihan Air PDAM</string>
+    <string-array name="roles">
+        <item>Pilih Jabatan</item>
+        <item>Loket</item>
+        <item>Lapangan</item>
+    </string-array>
+    <string name="pemakaian_format">Pemakaian: %d m³</string>
+    <string name="tagihan_format">Tagihan: Rp %d</string>
+    <string name="bayar_format">Bayar: %s</string>
+
+</resources>
+

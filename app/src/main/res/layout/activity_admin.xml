@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!-- Header Section -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_bottom_teal_bg"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:id="@+id/btnKembaliContainer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btnKembali"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_circle_back"
+                    android:contentDescription="Kembali"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_back" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buat Akun Pengguna"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Horizontal Scrollable Buttons Section -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <!-- Button 1 -->
+
+                <Button
+                    android:id="@+id/btnViewAccounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Akun Terdaftar"
+                    android:backgroundTint="@color/basic"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginEnd="8dp"/>
+
+
+                <!-- Add more buttons as needed -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Form Section -->
+        <LinearLayout
+            android:id="@+id/formContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Full Name Input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:hint="Masukkan Nama Lengkap Pegawai"
+                android:background="@drawable/input_background"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColorHint="#858484"
+                android:singleLine="true"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email Input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:hint="Masukkan Email Pegawai"
+                android:background="@drawable/input_background"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColorHint="#858484"
+                android:singleLine="true"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Role Selection -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Role"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+            <Spinner
+                android:id="@+id/spRole"
+
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Create Account Button -->
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buat Akun"
+                android:backgroundTint="@color/basic"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:paddingVertical="14dp" />
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleLarge"
+            android:indeterminateDrawable="@drawable/custom_progress_bar"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+</FrameLayout>

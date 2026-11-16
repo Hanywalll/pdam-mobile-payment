@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Denda"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/lvPetugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/selector_basic_dark_text"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"/>
+</LinearLayout>
